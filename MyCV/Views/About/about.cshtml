@@ -1,0 +1,187 @@
+﻿@{ ViewData["Title"] = "About page"; }
+
+@section css{
+    <link href="@Url.Content("~/css/about.css")" rel="stylesheet" type="text/css" />
+}
+<section class="about section padd-100">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Om Mig</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content">
+                <div class="row">
+                    <div class="about-text">
+                        <h3>Salwa Abdul-Rahman <span>Cloud Utvecklare</span></h3>
+                        <h4>Mål</h4>
+                        <p>
+                            Mitt allra största och långsiktiga mål är att hitta en arbetsplats som jag kan jobba hos under alla
+                            mina yrkesår och vara med att utveckla verksamheten. Mitt mål idag är att bli en fullstack-utvecklare.
+                            Därför hoppas jag att hitta en arbetsplats som stöttar och uppmuntrar mig att utveckla
+                            min kompetens inom cloud/backend/frontend-utveckling samt databashantering.
+                            Jag vill även se mig själv på en arbetsplats som jag har kul och trivs på.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info">
+                        <div class="row">
+                            <div class="info-item padd-50">
+                                <p>Födelsedag : <span>19 December 1993</span></p>
+                            </div>
+                            <div class="info-item padd-50">
+                                <p>Ålder : <span>27</span></p>
+                            </div>
+                            <div class="info-item padd-50">
+                                <p>Webbsida : <span>www.domain.com</span></p>
+                            </div>
+                            <div class="info-item padd-50">
+                                <p>Email : <span>salwaa.abdulrahman@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-50">
+                                <p>Mobilnummer : <span>+46 736 92 51 51</span></p>
+                            </div>
+                            <div class="info-item padd-50">
+                                <p>Stad : <span>Göteborg</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons">
+                                <a class="btn" asp-action="GetPdf" asp-controller="Home" target="_blank" rel="noopener noreferrer">Ladda ner CV</a>
+                                <a class="btn" href="https://github.com/SalwaRaa?tab=repositories" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="row">
+                            <div class="skill-item">
+                                <h5>C#</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 60%"></div>
+                                    <div class="skill-percent">60%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>.NET</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 50%"></div>
+                                    <div class="skill-percent">50%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Azure Portal</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 45%"></div>
+                                    <div class="skill-percent">45%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <h5>Azure DevOps</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 35%"></div>
+                                    <div class="skill-percent">35%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="education padd-50">
+                            <h3 class="title">Utbildning</h3>
+                            <div class="row">
+                                <div class="timeline-box padd-50">
+                                    <div class="timeline shadow-dark">
+                                        <!-- timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h6 class="timeline-date">
+                                                <i class="fa fa-calendar"></i> 2020 - pågående
+                                            </h6>
+                                            <h4 class="timeline-title">Jensen Yrkeshögskola</h4>
+                                            <p class="timeline-text">
+                                                Backend-utveckling med .NET ramverket & C# <br />
+                                                Cloud-utveckling inom Azure <br />
+                                                Grundläggande frontend-utveckling med Javascript, HTML, CSS och React <br />
+                                                Databashaneting med MySql & Sqlite <br />
+                                                Versionshantering med Azure DevOps & Git
+                                            </p>
+                                        </div>
+                                        <!-- timeline Item End -->
+                                        <!-- timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h6 class="timeline-date">
+                                                <i class="fa fa-calendar"></i> 2018 - 2019
+                                            </h6>
+                                            <h4 class="timeline-title">Internationella Relationer, Göteborgs Universitet</h4>
+                                            <p class="timeline-text">
+                                                Stor fokus inom självständig analysering av text &
+                                                material. Mycket självständigt arbete men även
+                                                grupparbeten förekommer. Mycket läsande, 300-400s/dag.
+                                            </p>
+                                        </div>
+                                        <!-- timeline Item End -->
+                                        <!-- timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h6 class="timeline-date">
+                                                <i class="fa fa-calendar"></i> 2014 - 2017
+                                            </h6>
+                                            <h4 class="timeline-title">International Relations, Malmö Universitet</h4>
+                                            <p class="timeline-text">
+                                                Utbildningen drevs på engelska. Stor fokus inom självständig analysering av text &
+                                                material. Mycket självständigt arbete men även
+                                                grupparbeten ibland. Mycket läsande, 300-400s/dag.
+                                            </p>
+                                        </div>
+                                        <!-- timeline Item End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience padd-50">
+                            <h3 class="title">Arbetslivserfarenhet</h3>
+                            <div class="row">
+                                <div class="timeline-box padd-50">
+                                    <div class="timeline shadow-dark">
+                                        <!-- timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h6 class="timeline-date">
+                                                <i class="fa fa-calendar"></i> 2019-2020
+                                            </h6>
+                                            <h4 class="timeline-title">Trafikledare/Administratör/Kundservice, UPS Göteborg</h4>
+                                            <p class="timeline-text">
+                                                Tidsbegränsade ärenden från kunder med frågor kring status och lokalisering av paket. <br /><br />
+
+                                                Kundservice, assisterar privatpersoner och företagare att packa och skicka iväg paket. <br /><br />
+
+                                                Assistera och trafikleder chaufförer inför leveranser/upphämtningar.
+                                            </p>
+                                        </div>
+                                        <!-- timeline Item End -->
+                                        <!-- timeline Item -->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                            <h6 class="timeline-date">
+                                                <i class="fa fa-calendar"></i> 2017-2019
+                                            </h6>
+                                            <h4 class="timeline-title">Vikariat Önneredsskolan Göteborg</h4>
+                                            <p class="timeline-text">
+                                                Syslöjdslärare under 3 månader, årskurs 4.<br /><br />
+
+                                                Vikariat inför helklass för årskurs 4-9 för alla ämnen
+                                            </p>
+                                        </div>
+                                        <!-- timeline Item End -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
